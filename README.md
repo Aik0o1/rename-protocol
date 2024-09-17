@@ -1,12 +1,3 @@
-# Rename-PDFs-Protocol-Script
-
-## Visão Geral
-Esse script tem finalidade de ler PDFs em busca do número de protocolo presente no mesmo a fim de renomear e tornar mais simples a sua busca.
-
-O script possui as seguintes características:
-**-**
-
-
 # Processador de PDFs com Tesseract e Regex
 
 Este projeto é um script Python que processa arquivos PDF em lotes, extrai texto utilizando OCR (Tesseract) e busca por padrões de protocolo em formatos específicos, utilizando expressões regulares (regex). Os arquivos PDF são renomeados de acordo com o protocolo encontrado e organizados em pastas.
