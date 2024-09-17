@@ -1,4 +1,5 @@
 # Processador de PDFs com Tesseract e Regex
+### Versão beta 0.0.1
 
 Este projeto é um script Python que processa arquivos PDF em lotes, extrai texto utilizando OCR (Tesseract) e busca por padrões de protocolo em formatos específicos, utilizando expressões regulares (regex). Os arquivos PDF são renomeados de acordo com o protocolo encontrado e organizados em pastas.
 
