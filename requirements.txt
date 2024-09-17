@@ -1,4 +1,6 @@
-os
-re
-shutil
 PyPDF2
+pytesseract
+pdf2image
+Pillow
+opencv-python
+
