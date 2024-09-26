@@ -11,7 +11,7 @@ from PyPDF2 import PdfReader, PdfWriter
 
 # Configuração do logging
 logging.basicConfig(
-    filename='processamento_pdfs.log',
+    filename='logTestes.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
@@ -48,27 +48,21 @@ def preprocessar_imagem(imagem):
 
 def extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secundario):
     imagens = pdf_para_imagens(pdf_path)
+    protocolos_encontrados = set()  # Usar um conjunto para evitar duplicatas
+
     for i, imagem in enumerate(imagens):
         imagem_preprocessada = preprocessar_imagem(imagem)
         texto = pytesseract.image_to_string(imagem_preprocessada)
 
-        protocolo = encontrar_protocolo_no_texto(texto, regex_prioritario, regex_secundario)
-        if protocolo:
-            return protocolo  # Retorna o protocolo assim que for encontrado
+        # Procurar todos os protocolos
+        protocolos_encontrados.update(re.findall(regex_prioritario, texto))
+        protocolos_encontrados.update(re.findall(regex_secundario, texto))
 
         # Limpar a memória após processar a página
         del imagem_preprocessada
         gc.collect()
         
-    return None  # Se não encontrar o protocolo em nenhuma página
-
-def encontrar_protocolo_no_texto(texto, regex_prioritario, regex_secundario):
-    match_prioritario = re.search(regex_prioritario, texto)
-    if match_prioritario:
-        return match_prioritario.group(0)
-    match_secundario = re.search(regex_secundario, texto)
-    if match_secundario:
-        return match_secundario.group(0)
+    return list(protocolos_encontrados)  # Retorna uma lista de protocolos encontrados
 
 def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, regex_secundario, tamanho_lote=100, max_paginas_por_subdocumento=10):
     os.makedirs(diretorio_destino, exist_ok=True)
@@ -90,7 +84,7 @@ def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, 
                 reader = PdfReader(pdf_path)
                 total_paginas = len(reader.pages)
                 
-                protocolo_encontrado = False
+                protocolos_encontrados = []
                 
                 # Se o documento tiver mais de 10 páginas, divida-o em subdocumentos
                 if total_paginas > 10:
@@ -98,16 +92,7 @@ def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, 
                     
                     # Processar cada subdocumento
                     for subdocumento in subdocumentos:
-                        protocolo = extrair_texto_tesseract_por_pagina(subdocumento, regex_prioritario, regex_secundario)
-
-                        if protocolo:
-                            protocolo = re.sub(r'\W', '', protocolo)
-                            novo_nome = f"{protocolo}.pdf"
-                            novo_caminho = os.path.join(diretorio_destino, novo_nome)
-                            shutil.copy(pdf_path, novo_caminho)  # Copia o PDF original com o protocolo
-                            logging.info(f"Arquivo {filename} movido e renomeado para {novo_nome}")
-                            protocolo_encontrado = True
-                            break  # Interrompe a verificação dos subdocumentos assim que encontrar o protocolo
+                        protocolos_encontrados.extend(extrair_texto_tesseract_por_pagina(subdocumento, regex_prioritario, regex_secundario))
 
                     # Excluir todos os subdocumentos gerados
                     for subdocumento in subdocumentos:
@@ -116,18 +101,17 @@ def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, 
 
                 else:
                     # Processar PDF normalmente se tiver 10 páginas ou menos
-                    protocolo = extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secundario)
-                    if protocolo:
-                        protocolo = re.sub(r'\W', '', protocolo)
-                        novo_nome = f"{protocolo}.pdf"
-                        novo_caminho = os.path.join(diretorio_destino, novo_nome)
-                        shutil.copy(pdf_path, novo_caminho)
-                        logging.info(f"Arquivo {filename} movido e renomeado para {novo_nome}")
-                        protocolo_encontrado = True
+                    protocolos_encontrados = extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secundario)
                 
-                if not protocolo_encontrado:
+                if protocolos_encontrados:
+                    protocolos_unicos = sorted(set(protocolos_encontrados))
+                    novo_nome = " ".join(re.sub(r'\W', '', protocolo) for protocolo in protocolos_unicos) + ".pdf"
+                    novo_caminho = os.path.join(diretorio_destino, novo_nome)
+                    shutil.move(pdf_path, novo_caminho)
+                    logging.info(f"Arquivo {filename} movido e renomeado para {novo_nome}")
+                else:
                     destino_nao_encontrado = os.path.join(diretorio_nao_encontrado, filename)
-                    shutil.copy(pdf_path, destino_nao_encontrado)
+                    shutil.move(pdf_path, destino_nao_encontrado)
                     logging.info(f"Protocolo não encontrado no arquivo {filename}, movido para {diretorio_nao_encontrado}")
 
                 gc.collect()
@@ -135,8 +119,8 @@ def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, 
                 logging.error(f"Erro ao processar arquivo {filename}: {e}")
 
 if __name__ == "__main__":
-    diretorio_origem = './pdfs'
-    diretorio_destino = './renomeados'
+    diretorio_origem = './testes'
+    diretorio_destino = './testesRenomeados'
     regex_prioritario = r'(PIP|PIN|PIE)\d{10}'
     regex_secundario = r'\b\d{2}/\d{6}-\d\b'
 
