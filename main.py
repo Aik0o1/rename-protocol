@@ -11,7 +11,7 @@ from PyPDF2 import PdfReader, PdfWriter
 
 # Configuração do logging
 logging.basicConfig(
-    filename='logTestes.log',
+    filename='logs.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
@@ -34,7 +34,7 @@ def dividir_pdf(pdf_path, max_paginas_por_subdocumento=10):
     
     return subdocumentos
 
-def pdf_para_imagens(pdf_path, dpi=500):
+def pdf_para_imagens(pdf_path, dpi=800):
     return convert_from_path(pdf_path, dpi=dpi)
 
 def preprocessar_imagem(imagem):
@@ -46,23 +46,37 @@ def preprocessar_imagem(imagem):
     imagem_bin = cv2.erode(imagem_bin, kernel, iterations=1)
     return imagem_bin
 
+def rotacionar_imagem(imagem, angulo):
+    (h, w) = imagem.shape[:2]
+    centro = (w // 2, h // 2)
+    matriz_rotacao = cv2.getRotationMatrix2D(centro, angulo, 1.0)
+    return cv2.warpAffine(imagem, matriz_rotacao, (w, h))
+
 def extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secundario):
     imagens = pdf_para_imagens(pdf_path)
-    protocolos_encontrados = set()  # Usar um conjunto para evitar duplicatas
+    protocolos_encontrados = set()
+
+    angulos = [0, 40, 43, 44, 45,50, 90, 92]  # Ângulos a serem testados
 
     for i, imagem in enumerate(imagens):
         imagem_preprocessada = preprocessar_imagem(imagem)
-        texto = pytesseract.image_to_string(imagem_preprocessada)
+        
+        for angulo in angulos:
+            imagem_rotacionada = rotacionar_imagem(imagem_preprocessada, angulo)
+            texto = pytesseract.image_to_string(imagem_rotacionada)
 
-        # Procurar todos os protocolos
-        protocolos_encontrados.update(re.findall(regex_prioritario, texto))
-        protocolos_encontrados.update(re.findall(regex_secundario, texto))
+            protocolos_encontrados.update(re.findall(regex_prioritario, texto))
+            protocolos_encontrados.update(re.findall(regex_secundario, texto))
 
-        # Limpar a memória após processar a página
+            # Limpar a memória após processar a imagem rotacionada
+            del imagem_rotacionada
+            gc.collect()
+        
+        # Limpar a memória após processar a imagem original
         del imagem_preprocessada
         gc.collect()
         
-    return list(protocolos_encontrados)  # Retorna uma lista de protocolos encontrados
+    return list(protocolos_encontrados)
 
 def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, regex_secundario, tamanho_lote=100, max_paginas_por_subdocumento=10):
     os.makedirs(diretorio_destino, exist_ok=True)
@@ -80,27 +94,22 @@ def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, 
                 logging.info(f"Processando arquivo {filename}")
                 pdf_path = os.path.join(diretorio_origem, filename)
                 
-                # Verificar o número de páginas no PDF
                 reader = PdfReader(pdf_path)
                 total_paginas = len(reader.pages)
                 
                 protocolos_encontrados = []
                 
-                # Se o documento tiver mais de 10 páginas, divida-o em subdocumentos
                 if total_paginas > 10:
                     subdocumentos = dividir_pdf(pdf_path, max_paginas_por_subdocumento)
                     
-                    # Processar cada subdocumento
                     for subdocumento in subdocumentos:
                         protocolos_encontrados.extend(extrair_texto_tesseract_por_pagina(subdocumento, regex_prioritario, regex_secundario))
 
-                    # Excluir todos os subdocumentos gerados
                     for subdocumento in subdocumentos:
                         os.remove(subdocumento)
                         logging.info(f"Subdocumento {subdocumento} excluído")
 
                 else:
-                    # Processar PDF normalmente se tiver 10 páginas ou menos
                     protocolos_encontrados = extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secundario)
                 
                 if protocolos_encontrados:
@@ -119,8 +128,8 @@ def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, 
                 logging.error(f"Erro ao processar arquivo {filename}: {e}")
 
 if __name__ == "__main__":
-    diretorio_origem = './testes'
-    diretorio_destino = './testesRenomeados'
+    diretorio_origem = './pdfs'
+    diretorio_destino = './renomeados'
     regex_prioritario = r'(PIP|PIN|PIE)\d{10}'
     regex_secundario = r'\b\d{2}/\d{6}-\d\b'
 
