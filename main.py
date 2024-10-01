@@ -8,6 +8,7 @@ import shutil
 import gc
 import logging
 from PyPDF2 import PdfReader, PdfWriter
+from collections import Counter
 
 # Configuração do logging
 logging.basicConfig(
@@ -52,12 +53,35 @@ def rotacionar_imagem(imagem, angulo):
     matriz_rotacao = cv2.getRotationMatrix2D(centro, angulo, 1.0)
     return cv2.warpAffine(imagem, matriz_rotacao, (w, h))
 
+def verificar_protocolo_semelhante(protocolos):
+    contagem = Counter(protocolos)
+    protocolos_mais_comuns = contagem.most_common()
+    
+    # Lista final de protocolos únicos
+    protocolos_unicos = []
+
+    while protocolos_mais_comuns:
+        protocolo_atual, _ = protocolos_mais_comuns.pop(0)
+        protocolo_similar = False
+
+        # Verifica se há protocolos semelhantes na lista final
+        for prot in protocolos_unicos:
+            dif = sum(1 for a, b in zip(prot, protocolo_atual) if a != b)
+            if dif == 1:  # Se diferir por apenas um dígito
+                protocolo_similar = True
+                break
+
+        if not protocolo_similar:
+            protocolos_unicos.append(protocolo_atual)
+
+    return protocolos_unicos
+
+
 def extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secundario):
     imagens = pdf_para_imagens(pdf_path)
-    protocolos_encontrados = set()
+    protocolos_encontrados = []
 
-    #angulos = list(range(0,361))  # Gera todos os ângulos de 0° a 360°
-    angulos = list(range(1,3)) + list(range(7,11)) + list(range(177,182)) + list(range(225,242)) + list(range(270,271))
+    angulos = list(range(1, 3)) + list(range(7, 11)) + list(range(177, 182)) + list(range(225, 242)) + list(range(270, 271))
 
     for i, imagem in enumerate(imagens):
         imagem_preprocessada = preprocessar_imagem(imagem)
@@ -65,30 +89,33 @@ def extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secund
         for angulo in angulos:
             imagem_rotacionada = rotacionar_imagem(imagem_preprocessada, angulo)
             texto = pytesseract.image_to_string(imagem_rotacionada)
-           # config_tesseract = r"--oem 3 --psm 6"
-           # texto = pytesseract.image_to_string(imagem_rotacionada, config=config_tesseract)
-
-            # Encontrar protocolos com o regex prioritário
+            
             encontrados_prioritario = re.findall(regex_prioritario, texto)
-            if encontrados_prioritario:
-                protocolos_encontrados.update(encontrados_prioritario)
-                logging.info(f"Protocolo(s) {encontrados_prioritario} encontrado(s) na página {i+1} com ângulo {angulo}° usando regex prioritário")
-
-            # Encontrar protocolos com o regex secundário
             encontrados_secundario = re.findall(regex_secundario, texto)
-            if encontrados_secundario:
-                protocolos_encontrados.update(encontrados_secundario)
-                logging.info(f"Protocolo(s) {encontrados_secundario} encontrado(s) na página {i+1} com ângulo {angulo}° usando regex secundário")
 
-            # Limpar a memória após processar a imagem rotacionada
+            if encontrados_prioritario:
+                logging.info(f"Protocolo(s) prioritário(s) encontrado(s) no ângulo {angulo}: {encontrados_prioritario}")
+                print(f"Protocolo(s) prioritário(s) encontrado(s) no ângulo {angulo}: {encontrados_prioritario}")
+
+            if encontrados_secundario:
+                logging.info(f"Protocolo(s) secundário(s) encontrado(s) no ângulo {angulo}: {encontrados_secundario}")
+                print(f"Protocolo(s) secundário(s) encontrado(s) no ângulo {angulo}: {encontrados_secundario}")
+
+            # Adiciona os protocolos encontrados à lista geral
+            protocolos_encontrados.extend(encontrados_prioritario)
+            protocolos_encontrados.extend(encontrados_secundario)
+
             del imagem_rotacionada
             gc.collect()
         
-        # Limpar a memória após processar a imagem original
         del imagem_preprocessada
         gc.collect()
-        
-    return list(protocolos_encontrados)
+    
+    if protocolos_encontrados:
+        protocolos_finais = verificar_protocolo_semelhante(protocolos_encontrados)
+        return protocolos_finais
+    else:
+        return []
 
 
 def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, regex_secundario, tamanho_lote=100, max_paginas_por_subdocumento=10):
@@ -141,8 +168,8 @@ def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, 
                 logging.error(f"Erro ao processar arquivo {filename}: {e}")
 
 if __name__ == "__main__":
-    diretorio_origem = './pdfs'
-    diretorio_destino = './renomeados'
+    diretorio_origem = './DOCUMENTOS'
+    diretorio_destino = './Documentos-Renomeados'
     regex_prioritario = r'\b(?:PIP|PIN|PIE)(?=\d{10})\d{10}\b'
     regex_secundario = r'\b\d{2}/\d{6}-\d\b'
 
