@@ -1,0 +1,65 @@
+2024-09-30 12:20:40,603 - INFO - Processando lote 1 de 504
+2024-09-30 12:20:40,604 - INFO - Processando arquivo 000004871.pdf
+2024-09-30 12:30:58,756 - INFO - Protocolo(s) ['00/000487-1'] encontrado(s) na página 5 com ângulo 229° usando regex secundário
+2024-09-30 12:31:01,532 - INFO - Protocolo(s) ['00/000487-1'] encontrado(s) na página 5 com ângulo 230° usando regex secundário
+2024-09-30 12:31:04,341 - INFO - Protocolo(s) ['00/000487-1'] encontrado(s) na página 5 com ângulo 231° usando regex secundário
+2024-09-30 12:31:07,402 - INFO - Protocolo(s) ['00/000487-1'] encontrado(s) na página 5 com ângulo 232° usando regex secundário
+2024-09-30 12:31:10,358 - INFO - Protocolo(s) ['00/000487-1'] encontrado(s) na página 5 com ângulo 233° usando regex secundário
+2024-09-30 12:31:13,430 - INFO - Protocolo(s) ['00/000487-1'] encontrado(s) na página 5 com ângulo 234° usando regex secundário
+2024-09-30 12:31:16,225 - INFO - Protocolo(s) ['90/000487-1'] encontrado(s) na página 5 com ângulo 235° usando regex secundário
+2024-09-30 12:31:34,214 - INFO - Arquivo 000004871.pdf movido e renomeado para 000004871 900004871.pdf
+2024-09-30 12:31:34,223 - INFO - Processando arquivo 000006297.pdf
+2024-09-30 12:36:21,097 - INFO - Protocolo(s) ['00/000629-7', '00/000629-7'] encontrado(s) na página 3 com ângulo 238° usando regex secundário
+2024-09-30 12:36:25,214 - INFO - Protocolo(s) ['90/000629-7'] encontrado(s) na página 3 com ângulo 239° usando regex secundário
+2024-09-30 12:36:29,376 - INFO - Protocolo(s) ['00/000629-7'] encontrado(s) na página 3 com ângulo 240° usando regex secundário
+2024-09-30 12:36:33,509 - INFO - Protocolo(s) ['00/000629-7', '00/000629-7'] encontrado(s) na página 3 com ângulo 241° usando regex secundário
+2024-09-30 12:36:36,088 - INFO - Arquivo 000006297.pdf movido e renomeado para 000006297 900006297.pdf
+2024-09-30 12:36:36,093 - INFO - Processando arquivo 000006980.pdf
+2024-09-30 12:39:44,016 - INFO - Protocolo(s) ['00/000698-0'] encontrado(s) na página 2 com ângulo 225° usando regex secundário
+2024-09-30 12:39:47,560 - INFO - Protocolo(s) ['00/000698-0'] encontrado(s) na página 2 com ângulo 226° usando regex secundário
+2024-09-30 12:39:50,939 - INFO - Protocolo(s) ['00/000698-0'] encontrado(s) na página 2 com ângulo 227° usando regex secundário
+2024-09-30 12:39:54,436 - INFO - Protocolo(s) ['00/000698-0'] encontrado(s) na página 2 com ângulo 228° usando regex secundário
+2024-09-30 12:40:38,891 - INFO - Arquivo 000006980.pdf movido e renomeado para 000006980.pdf
+2024-09-30 12:40:38,897 - INFO - Processando arquivo 000008621.pdf
+2024-09-30 12:47:10,654 - INFO - Protocolo(s) ['00/000862-1'] encontrado(s) na página 4 com ângulo 233° usando regex secundário
+2024-09-30 12:47:13,864 - INFO - Protocolo(s) ['00/000862-1'] encontrado(s) na página 4 com ângulo 234° usando regex secundário
+2024-09-30 12:47:17,070 - INFO - Protocolo(s) ['00/000862-1'] encontrado(s) na página 4 com ângulo 235° usando regex secundário
+2024-09-30 12:47:20,187 - INFO - Protocolo(s) ['00/000862-1'] encontrado(s) na página 4 com ângulo 236° usando regex secundário
+2024-09-30 12:47:23,276 - INFO - Protocolo(s) ['00/000862-1'] encontrado(s) na página 4 com ângulo 237° usando regex secundário
+2024-09-30 12:47:26,472 - INFO - Protocolo(s) ['00/000862-1'] encontrado(s) na página 4 com ângulo 238° usando regex secundário
+2024-09-30 12:47:29,629 - INFO - Protocolo(s) ['00/000862-1'] encontrado(s) na página 4 com ângulo 239° usando regex secundário
+2024-09-30 12:47:38,595 - INFO - Arquivo 000008621.pdf movido e renomeado para 000008621.pdf
+2024-09-30 12:47:38,602 - INFO - Processando arquivo 000016357.pdf
+2024-09-30 12:53:23,897 - INFO - Protocolo não encontrado no arquivo 000016357.pdf, movido para ./renomeados/naoEncontrado
+2024-09-30 12:53:23,903 - INFO - Processando arquivo 000022594.pdf
+2024-09-30 12:57:43,063 - INFO - Protocolo(s) ['00/002259-4'] encontrado(s) na página 2 com ângulo 225° usando regex secundário
+2024-09-30 12:57:55,423 - INFO - Protocolo(s) ['00/002259-4'] encontrado(s) na página 2 com ângulo 227° usando regex secundário
+2024-09-30 12:58:07,813 - INFO - Protocolo(s) ['00/002259-4'] encontrado(s) na página 2 com ângulo 229° usando regex secundário
+2024-09-30 12:58:13,420 - INFO - Protocolo(s) ['00/002259-4'] encontrado(s) na página 2 com ângulo 230° usando regex secundário
+2024-09-30 12:58:17,861 - INFO - Protocolo(s) ['00/002259-4'] encontrado(s) na página 2 com ângulo 231° usando regex secundário
+2024-09-30 12:58:23,099 - INFO - Protocolo(s) ['90/002259-4'] encontrado(s) na página 2 com ângulo 232° usando regex secundário
+2024-09-30 13:06:07,145 - INFO - Arquivo 000022594.pdf movido e renomeado para 000022594 900022594.pdf
+2024-09-30 13:06:07,152 - INFO - Processando arquivo 000024422.pdf
+2024-09-30 13:08:42,436 - INFO - Protocolo(s) ['00/002442-2'] encontrado(s) na página 2 com ângulo 1° usando regex secundário
+2024-09-30 13:08:45,124 - INFO - Protocolo(s) ['00/002442-2'] encontrado(s) na página 2 com ângulo 2° usando regex secundário
+2024-09-30 13:11:27,733 - INFO - Arquivo 000024422.pdf movido e renomeado para 000024422.pdf
+2024-09-30 13:11:27,739 - INFO - Processando arquivo 000024848.pdf
+2024-09-30 13:19:10,451 - INFO - Protocolo não encontrado no arquivo 000024848.pdf, movido para ./renomeados/naoEncontrado
+2024-09-30 13:19:10,457 - INFO - Processando arquivo 000026484.pdf
+2024-09-30 13:25:30,850 - INFO - Protocolo não encontrado no arquivo 000026484.pdf, movido para ./renomeados/naoEncontrado
+2024-09-30 13:25:30,858 - INFO - Processando arquivo 000027332.pdf
+2024-09-30 13:28:32,263 - INFO - Protocolo não encontrado no arquivo 000027332.pdf, movido para ./renomeados/naoEncontrado
+2024-09-30 13:28:32,270 - INFO - Processando lote 2 de 504
+2024-09-30 13:28:32,270 - INFO - Processando arquivo 001019562.pdf
+2024-09-30 13:45:31,798 - INFO - Protocolo não encontrado no arquivo 001019562.pdf, movido para ./renomeados/naoEncontrado
+2024-09-30 13:45:31,808 - INFO - Processando arquivo 001019570.pdf
+2024-09-30 13:51:58,518 - INFO - Protocolo não encontrado no arquivo 001019570.pdf, movido para ./renomeados/naoEncontrado
+2024-09-30 13:51:58,525 - INFO - Processando arquivo 001030426.pdf
+2024-09-30 14:03:39,803 - INFO - Protocolo não encontrado no arquivo 001030426.pdf, movido para ./renomeados/naoEncontrado
+2024-09-30 14:03:39,810 - INFO - Processando arquivo 001040669.pdf
+2024-09-30 14:09:41,490 - INFO - Protocolo não encontrado no arquivo 001040669.pdf, movido para ./renomeados/naoEncontrado
+2024-09-30 14:09:41,497 - INFO - Processando arquivo 001076930.pdf
+2024-10-01 08:02:44,277 - INFO - Processando lote 1 de 503
+2024-10-01 08:02:44,278 - INFO - Processando arquivo 001076930.pdf
+2024-10-01 08:23:54,250 - INFO - Processando lote 1 de 1
+2024-10-01 08:23:54,251 - INFO - Processando arquivo 000004871 900004871.pdf

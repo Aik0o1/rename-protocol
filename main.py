@@ -56,7 +56,8 @@ def extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secund
     imagens = pdf_para_imagens(pdf_path)
     protocolos_encontrados = set()
 
-    angulos = [0, 40, 43, 44, 45,50, 90, 92]  # Ângulos a serem testados
+    #angulos = list(range(0,361))  # Gera todos os ângulos de 0° a 360°
+    angulos = list(range(1,3)) + list(range(7,11)) + list(range(177,182)) + list(range(225,242)) + list(range(270,271))
 
     for i, imagem in enumerate(imagens):
         imagem_preprocessada = preprocessar_imagem(imagem)
@@ -64,9 +65,20 @@ def extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secund
         for angulo in angulos:
             imagem_rotacionada = rotacionar_imagem(imagem_preprocessada, angulo)
             texto = pytesseract.image_to_string(imagem_rotacionada)
+           # config_tesseract = r"--oem 3 --psm 6"
+           # texto = pytesseract.image_to_string(imagem_rotacionada, config=config_tesseract)
 
-            protocolos_encontrados.update(re.findall(regex_prioritario, texto))
-            protocolos_encontrados.update(re.findall(regex_secundario, texto))
+            # Encontrar protocolos com o regex prioritário
+            encontrados_prioritario = re.findall(regex_prioritario, texto)
+            if encontrados_prioritario:
+                protocolos_encontrados.update(encontrados_prioritario)
+                logging.info(f"Protocolo(s) {encontrados_prioritario} encontrado(s) na página {i+1} com ângulo {angulo}° usando regex prioritário")
+
+            # Encontrar protocolos com o regex secundário
+            encontrados_secundario = re.findall(regex_secundario, texto)
+            if encontrados_secundario:
+                protocolos_encontrados.update(encontrados_secundario)
+                logging.info(f"Protocolo(s) {encontrados_secundario} encontrado(s) na página {i+1} com ângulo {angulo}° usando regex secundário")
 
             # Limpar a memória após processar a imagem rotacionada
             del imagem_rotacionada
@@ -77,6 +89,7 @@ def extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secund
         gc.collect()
         
     return list(protocolos_encontrados)
+
 
 def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, regex_secundario, tamanho_lote=100, max_paginas_por_subdocumento=10):
     os.makedirs(diretorio_destino, exist_ok=True)
@@ -130,8 +143,8 @@ def processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, 
 if __name__ == "__main__":
     diretorio_origem = './pdfs'
     diretorio_destino = './renomeados'
-    regex_prioritario = r'(PIP|PIN|PIE)\d{10}'
+    regex_prioritario = r'\b(?:PIP|PIN|PIE)(?=\d{10})\d{10}\b'
     regex_secundario = r'\b\d{2}/\d{6}-\d\b'
 
     # Processar PDFs em lotes de 10
-    processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, regex_secundario, tamanho_lote=10, max_paginas_por_subdocumento=10)
+    processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, regex_secundario, tamanho_lote=10, max_paginas_por_subdocumento=5)
