@@ -1,0 +1,399 @@
+2024-10-01 08:24:14,393 - INFO - Processando lote 1 de 1
+2024-10-01 08:24:14,393 - INFO - Processando arquivo 000004871 900004871.pdf
+2024-10-01 09:27:39,907 - INFO - Processando lote 1 de 1
+2024-10-01 09:27:39,907 - INFO - Processando arquivo 000004871 900004871.pdf
+2024-10-01 09:36:14,208 - INFO - Arquivo 000004871 900004871.pdf movido e renomeado para 000004871.pdf
+2024-10-01 09:36:14,216 - INFO - Processando arquivo 000006297 900006297.pdf
+2024-10-01 09:40:27,469 - INFO - Arquivo 000006297 900006297.pdf movido e renomeado para 000006297.pdf
+2024-10-01 09:43:08,118 - INFO - Processando lote 1 de 1
+2024-10-01 09:43:08,118 - INFO - Processando arquivo 080023401.pdf
+2024-10-01 09:43:16,718 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 1: ['08/002340-1']
+2024-10-01 09:45:20,084 - INFO - Protocolo final selecionado: 08/002340-1
+2024-10-01 09:45:20,099 - INFO - Arquivo 080023401.pdf movido e renomeado para 080023401.pdf
+2024-10-01 09:45:48,075 - INFO - Processando lote 1 de 1
+2024-10-01 09:45:48,075 - INFO - Processando arquivo 000006297 900006297.pdf
+2024-10-01 09:49:59,374 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['00/000736-6']
+2024-10-01 09:50:03,915 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['00/000736-6']
+2024-10-01 09:50:07,703 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['00/000629-7']
+2024-10-01 09:50:11,947 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['00/000629-7']
+2024-10-01 09:50:16,451 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 241: ['00/000629-7']
+2024-10-01 09:50:18,881 - INFO - Protocolo final selecionado: 00/000629-7
+2024-10-01 09:50:18,903 - INFO - Arquivo 000006297 900006297.pdf movido e renomeado para 000006297.pdf
+2024-10-01 09:50:18,910 - INFO - Processando arquivo 001076930.pdf
+2024-10-01 10:04:53,557 - INFO - Processando lote 1 de 1
+2024-10-01 10:04:53,558 - INFO - Processando arquivo 000006297.pdf
+2024-10-01 10:06:00,345 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['00/000736-6']
+2024-10-01 10:06:03,897 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['00/000736-6']
+2024-10-01 10:06:07,292 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['00/000629-7']
+2024-10-01 10:06:11,001 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['00/000629-7']
+2024-10-01 10:06:14,570 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 241: ['00/000629-7']
+2024-10-01 10:06:16,746 - INFO - Protocolo final selecionado: ['00/000629-7', '00/000736-6']
+2024-10-01 10:06:16,749 - ERROR - Erro ao processar arquivo 000006297.pdf: unhashable type: 'list'
+2024-10-01 10:06:16,750 - INFO - Processando arquivo 001076930.pdf
+2024-10-01 10:07:18,908 - INFO - Processando lote 1 de 1
+2024-10-01 10:07:18,908 - INFO - Processando arquivo 000006297.pdf
+2024-10-01 10:08:26,044 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['00/000736-6']
+2024-10-01 10:08:29,536 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['00/000736-6']
+2024-10-01 10:08:32,947 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['00/000629-7']
+2024-10-01 10:08:36,677 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['00/000629-7']
+2024-10-01 10:08:40,271 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 241: ['00/000629-7']
+2024-10-01 10:08:42,427 - INFO - Protocolo final selecionado: ['00/000629-7', '00/000736-6']
+2024-10-01 10:08:42,429 - ERROR - Erro ao processar arquivo 000006297.pdf: unhashable type: 'list'
+2024-10-01 10:08:42,430 - INFO - Processando arquivo 001076930.pdf
+2024-10-01 10:08:42,433 - ERROR - Erro ao processar arquivo 001076930.pdf: [Errno 2] No such file or directory: './teste/001076930.pdf'
+2024-10-01 10:10:10,178 - INFO - Processando lote 1 de 1
+2024-10-01 10:10:10,178 - INFO - Processando arquivo 000006297.pdf
+2024-10-01 10:11:15,588 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['00/000736-6']
+2024-10-01 10:11:19,102 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['00/000736-6']
+2024-10-01 10:11:22,429 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['00/000629-7']
+2024-10-01 10:11:26,209 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['00/000629-7']
+2024-10-01 10:11:29,788 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 241: ['00/000629-7']
+2024-10-01 10:11:31,978 - INFO - Arquivo 000006297.pdf movido e renomeado para 000006297 000007366.pdf
+2024-10-01 10:12:37,891 - INFO - Processando lote 1 de 1
+2024-10-01 10:12:37,891 - INFO - Processando arquivo 000004871 900004871.pdf
+2024-10-01 10:21:21,734 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['00/000487-1']
+2024-10-01 10:21:26,348 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['00/000487-1']
+2024-10-01 10:21:28,904 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['00/000487-1']
+2024-10-01 10:21:31,455 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['00/000487-1']
+2024-10-01 10:21:33,882 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['00/000487-1']
+2024-10-01 10:21:36,607 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['00/000487-1']
+2024-10-01 10:21:39,437 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['00/000487-1']
+2024-10-01 10:21:41,900 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['90/000487-1']
+2024-10-01 10:21:58,651 - INFO - Arquivo 000004871 900004871.pdf movido e renomeado para 000004871.pdf
+2024-10-01 10:23:44,844 - INFO - Processando lote 1 de 1
+2024-10-01 10:23:44,845 - INFO - Processando arquivo 010005572 010005579 010209352.pdf
+2024-10-01 10:23:59,162 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 1: ['01/000557-9']
+2024-10-01 10:24:05,243 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 2: ['01/000557-2']
+2024-10-01 10:26:32,356 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 1: ['01/020935-2']
+2024-10-01 10:28:33,844 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 1: ['01/020935-2', '01/020935-2']
+2024-10-01 10:28:36,215 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 2: ['01/020935-2']
+2024-10-01 10:29:37,346 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 270: ['01/020935-2', '01/020935-2']
+2024-10-01 10:29:37,368 - INFO - Arquivo 010005572 010005579 010209352.pdf movido e renomeado para 010005579 010209352.pdf
+2024-10-01 10:38:00,150 - INFO - Processando lote 1 de 1
+2024-10-01 10:38:00,150 - INFO - Processando arquivo 001076930.pdf
+2024-10-01 10:42:58,783 - INFO - Processando lote 1 de 1
+2024-10-01 10:42:58,783 - INFO - Processando arquivo 001076930.pdf
+2024-10-01 11:53:10,652 - INFO - Subdocumento ./teste/001076930.pdf_parte_1.pdf excluído
+2024-10-01 11:53:10,659 - INFO - Subdocumento ./teste/001076930.pdf_parte_2.pdf excluído
+2024-10-01 11:53:10,662 - INFO - Subdocumento ./teste/001076930.pdf_parte_3.pdf excluído
+2024-10-01 11:53:10,665 - INFO - Subdocumento ./teste/001076930.pdf_parte_4.pdf excluído
+2024-10-01 11:53:10,668 - INFO - Subdocumento ./teste/001076930.pdf_parte_5.pdf excluído
+2024-10-01 11:53:10,671 - INFO - Subdocumento ./teste/001076930.pdf_parte_6.pdf excluído
+2024-10-01 11:53:10,673 - INFO - Subdocumento ./teste/001076930.pdf_parte_7.pdf excluído
+2024-10-01 11:53:10,674 - INFO - Subdocumento ./teste/001076930.pdf_parte_8.pdf excluído
+2024-10-01 11:53:10,676 - INFO - Subdocumento ./teste/001076930.pdf_parte_9.pdf excluído
+2024-10-01 11:53:10,686 - INFO - Protocolo não encontrado no arquivo 001076930.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-01 11:57:03,480 - INFO - Processando lote 1 de 504
+2024-10-01 11:57:03,480 - INFO - Processando arquivo 000004871.pdf
+2024-10-02 08:27:04,278 - INFO - Processando lote 1 de 1
+2024-10-02 08:27:04,279 - INFO - Processando arquivo 010022066.pdf
+2024-10-02 08:27:58,118 - INFO - Processando lote 1 de 1
+2024-10-02 08:27:58,119 - INFO - Processando arquivo 010022066.pdf
+2024-10-02 08:29:11,323 - INFO - Processando lote 1 de 1
+2024-10-02 08:29:11,324 - INFO - Processando arquivo 010022066.pdf
+2024-10-02 08:30:17,013 - INFO - Processando lote 1 de 1
+2024-10-02 08:30:17,014 - INFO - Processando arquivo 010022066.pdf
+2024-10-02 08:39:18,489 - INFO - Processando lote 1 de 1
+2024-10-02 08:39:18,489 - INFO - Processando arquivo 010022066.pdf
+2024-10-02 08:40:05,990 - INFO - Processando lote 1 de 1
+2024-10-02 08:40:05,990 - INFO - Processando arquivo 010022066.pdf
+2024-10-02 08:43:11,551 - INFO - Processando lote 1 de 1
+2024-10-02 08:43:11,551 - INFO - Processando arquivo 010022066.pdf
+2024-10-02 08:44:00,027 - INFO - Processando lote 1 de 1
+2024-10-02 08:44:00,028 - INFO - Processando arquivo 010022066.pdf
+2024-10-02 08:44:30,284 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/002206-6']
+2024-10-02 08:44:30,693 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/002206-6']
+2024-10-02 08:44:31,068 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/002206-6']
+2024-10-02 08:44:31,474 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/002206-6']
+2024-10-02 08:44:31,865 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/002206-6']
+2024-10-02 08:44:32,289 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/002206-6']
+2024-10-02 08:44:32,707 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/002206-6']
+2024-10-02 08:44:33,140 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/002206-6']
+2024-10-02 08:44:33,590 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['01/002206-6']
+2024-10-02 08:44:34,030 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['91/002206-6']
+2024-10-02 08:44:34,468 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 236: ['91/002206-6']
+2024-10-02 08:44:35,513 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['91/002206-8']
+2024-10-02 08:45:11,721 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/002206-6']
+2024-10-02 08:45:12,100 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/002206-6']
+2024-10-02 08:45:12,497 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/002206-6']
+2024-10-02 08:45:12,911 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/002206-6']
+2024-10-02 08:45:13,297 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/002206-6']
+2024-10-02 08:45:13,710 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/002206-6']
+2024-10-02 08:45:14,113 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/002206-6']
+2024-10-02 08:45:14,518 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/002206-6']
+2024-10-02 08:45:14,953 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['91/002206-6']
+2024-10-02 08:45:15,383 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['91/002206-6']
+2024-10-02 08:45:15,851 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['91/002206-6']
+2024-10-02 08:45:16,745 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['93/002206-6']
+2024-10-02 08:46:18,926 - INFO - Processando lote 1 de 1
+2024-10-02 08:46:18,926 - INFO - Processando arquivo 010022066.pdf
+2024-10-02 08:47:34,317 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/002206-6']
+2024-10-02 08:47:35,528 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/002206-6']
+2024-10-02 08:47:36,738 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/002206-6']
+2024-10-02 08:47:37,904 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/002206-6']
+2024-10-02 08:47:39,099 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/002206-6']
+2024-10-02 08:47:40,321 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/002206-6']
+2024-10-02 08:47:41,578 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/002206-6']
+2024-10-02 08:47:42,775 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/002206-6']
+2024-10-02 08:49:16,835 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/002206-6']
+2024-10-02 08:49:18,049 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/002206-6']
+2024-10-02 08:49:19,265 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/002206-6']
+2024-10-02 08:49:20,652 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/002206-6']
+2024-10-02 08:49:22,020 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/002206-6']
+2024-10-02 08:49:23,354 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/002206-6']
+2024-10-02 08:49:24,631 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/002206-6']
+2024-10-02 08:49:25,909 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/002206-6']
+2024-10-02 08:49:27,248 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/002206-6']
+2024-10-02 08:49:28,606 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['91/002206-6']
+2024-10-02 08:50:57,630 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/002206-6']
+2024-10-02 08:50:58,836 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['91/002206-6']
+2024-10-02 08:51:00,028 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['91/002206-6']
+2024-10-02 08:52:45,627 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/002206-6']
+2024-10-02 08:52:46,958 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/002206-6']
+2024-10-02 08:52:48,322 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/002206-6']
+2024-10-02 08:52:49,666 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/002206-6']
+2024-10-02 08:52:50,958 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/002206-6']
+2024-10-02 08:52:52,323 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/002206-6']
+2024-10-02 08:52:53,596 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/002206-6']
+2024-10-02 08:52:54,886 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/002206-6']
+2024-10-02 08:52:57,382 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['91/002206-6']
+2024-10-02 08:54:01,108 - INFO - Arquivo 010022066.pdf movido e renomeado para 010022066.pdf
+2024-10-02 09:00:32,185 - INFO - Processando lote 1 de 1
+2024-10-02 09:00:32,186 - INFO - Processando arquivo 010022066.pdf
+2024-10-02 09:02:32,012 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/002206-6']
+2024-10-02 09:02:33,664 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/002206-6']
+2024-10-02 09:02:35,378 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/002206-6']
+2024-10-02 09:02:37,046 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/002206-6']
+2024-10-02 09:02:38,692 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/002206-6']
+2024-10-02 09:02:40,322 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/002206-6']
+2024-10-02 09:02:42,031 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/002206-6']
+2024-10-02 09:02:43,715 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/002206-6']
+2024-10-02 09:02:45,382 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/002206-6']
+2024-10-02 09:02:47,081 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['01/002206-6']
+2024-10-02 09:02:48,778 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['91/002206-6']
+2024-10-02 09:04:49,888 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/002206-6']
+2024-10-02 09:04:51,512 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/002206-6']
+2024-10-02 09:04:53,237 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/002206-6']
+2024-10-02 09:04:55,037 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/002206-6']
+2024-10-02 09:04:56,733 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/002206-6']
+2024-10-02 09:04:58,471 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/002206-6']
+2024-10-02 09:05:00,350 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/002206-6']
+2024-10-02 09:05:02,129 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/002206-6']
+2024-10-02 09:05:07,366 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['91/002206-6']
+2024-10-02 09:07:21,463 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['91/002206-6']
+2024-10-02 09:07:23,264 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['91/002206-6']
+2024-10-02 09:09:46,401 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/002206-6']
+2024-10-02 09:09:48,292 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/002206-6']
+2024-10-02 09:09:50,199 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/002206-6']
+2024-10-02 09:09:52,095 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/002206-6']
+2024-10-02 09:09:53,936 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/002206-6']
+2024-10-02 09:09:55,755 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/002206-6']
+2024-10-02 09:09:59,409 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/002206-6']
+2024-10-02 09:10:02,178 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/002206-6']
+2024-10-02 09:10:04,533 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/002206-6']
+2024-10-02 09:10:06,631 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['91/002206-6']
+2024-10-02 09:11:37,144 - INFO - Arquivo 010022066.pdf movido e renomeado para 010022066.pdf
+2024-10-02 11:01:03,965 - INFO - Processando lote 1 de 1
+2024-10-02 11:01:03,965 - INFO - Processando arquivo 010035052 010035060 910035069.pdf
+2024-10-02 11:02:56,509 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/003505-2']
+2024-10-02 11:02:57,648 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/003505-2']
+2024-10-02 11:02:58,839 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/003505-2']
+2024-10-02 11:02:59,895 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/003505-2']
+2024-10-02 11:03:00,974 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['91/003505-2']
+2024-10-02 11:03:03,130 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['91/003505-2']
+2024-10-02 11:04:44,125 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/003506-0']
+2024-10-02 11:04:45,639 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/003506-0']
+2024-10-02 11:04:47,105 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/003506-0']
+2024-10-02 11:04:48,600 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/003506-0']
+2024-10-02 11:04:50,199 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/003506-0']
+2024-10-02 11:04:51,893 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['01/003506-0']
+2024-10-02 11:04:53,442 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['01/003506-0']
+2024-10-02 11:04:56,720 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['91/003506-0']
+2024-10-02 11:04:58,150 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['91/003506-9']
+2024-10-02 11:07:09,926 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['01/003506-0']
+2024-10-02 11:07:11,631 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['01/003506-0']
+2024-10-02 11:07:13,323 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['91/003506-0']
+2024-10-02 11:07:15,469 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['01/003506-0']
+2024-10-02 11:07:18,205 - INFO - Arquivo 010035052 010035060 910035069.pdf movido e renomeado para 010035052 010035060 910035052 910035060.pdf
+2024-10-02 11:08:20,423 - INFO - Processando lote 1 de 1
+2024-10-02 11:08:20,423 - INFO - Processando arquivo 010035052 010035060 910035052 910035060.pdf
+2024-10-02 11:12:14,737 - INFO - Processando lote 1 de 1
+2024-10-02 11:12:14,739 - INFO - Processando arquivo 010035052 010035060 910035052 910035060.pdf
+2024-10-02 11:14:08,703 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/003505-2']
+2024-10-02 11:14:09,842 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/003505-2']
+2024-10-02 11:14:10,961 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/003505-2']
+2024-10-02 11:14:11,983 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/003505-2']
+2024-10-02 11:14:12,955 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['91/003505-2']
+2024-10-02 11:14:15,129 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['91/003505-2']
+2024-10-02 11:16:01,275 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/003506-0']
+2024-10-02 11:16:02,731 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/003506-0']
+2024-10-02 11:16:04,236 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/003506-0']
+2024-10-02 11:16:05,712 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/003506-0']
+2024-10-02 11:16:07,193 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/003506-0']
+2024-10-02 11:16:08,688 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['01/003506-0']
+2024-10-02 11:16:10,125 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['01/003506-0']
+2024-10-02 11:16:13,107 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['91/003506-0']
+2024-10-02 11:16:14,564 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['91/003506-9']
+2024-10-02 11:18:30,380 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['01/003506-0']
+2024-10-02 11:18:32,052 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['01/003506-0']
+2024-10-02 11:18:33,698 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['91/003506-0']
+2024-10-02 11:18:35,556 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['01/003506-0']
+2024-10-02 11:18:38,251 - INFO - Protocolo não encontrado no arquivo 010035052 010035060 910035052 910035060.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-02 11:23:08,153 - INFO - Processando lote 1 de 1
+2024-10-02 11:23:08,154 - INFO - Processando arquivo 010035052 010035060 910035052 910035060.pdf
+2024-10-02 11:25:02,514 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/003505-2']
+2024-10-02 11:25:03,583 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/003505-2']
+2024-10-02 11:25:04,625 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/003505-2']
+2024-10-02 11:25:05,694 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/003505-2']
+2024-10-02 11:25:06,678 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['91/003505-2']
+2024-10-02 11:25:08,790 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['91/003505-2']
+2024-10-02 11:26:49,895 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 229: ['01/003506-0']
+2024-10-02 11:26:51,325 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/003506-0']
+2024-10-02 11:26:52,860 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/003506-0']
+2024-10-02 11:26:54,317 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/003506-0']
+2024-10-02 11:26:55,756 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/003506-0']
+2024-10-02 11:26:57,227 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['01/003506-0']
+2024-10-02 11:26:58,639 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['01/003506-0']
+2024-10-02 11:27:01,652 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['91/003506-0']
+2024-10-02 11:27:03,101 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['91/003506-9']
+2024-10-02 11:29:15,639 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['01/003506-0']
+2024-10-02 11:29:17,275 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['01/003506-0']
+2024-10-02 11:29:18,967 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['91/003506-0']
+2024-10-02 11:29:20,718 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['01/003506-0']
+2024-10-02 11:29:23,410 - INFO - Protocolo não encontrado no arquivo 010035052 010035060 910035052 910035060.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-02 11:41:50,623 - INFO - Processando lote 1 de 1
+2024-10-02 11:41:50,624 - INFO - Processando arquivo 010035052 010035060 910035052 910035060.pdf
+2024-10-02 11:42:22,668 - INFO - Processando lote 1 de 1
+2024-10-02 11:42:22,668 - INFO - Processando arquivo 010035052 010035060 910035052 910035060.pdf
+2024-10-02 11:44:49,139 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/003505-2']
+2024-10-02 11:44:50,774 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/003505-2']
+2024-10-02 11:44:52,261 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/003505-2']
+2024-10-02 11:44:53,753 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/003505-2']
+2024-10-02 11:44:58,156 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['91/003505-2']
+2024-10-02 11:47:13,442 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/003506-0']
+2024-10-02 11:47:15,364 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/003506-0']
+2024-10-02 11:47:17,388 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/003506-0']
+2024-10-02 11:47:19,391 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/003506-0']
+2024-10-02 11:47:21,599 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['01/003506-0']
+2024-10-02 11:47:23,815 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['01/003506-0']
+2024-10-02 11:47:25,668 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 236: ['91/003506-0']
+2024-10-02 11:47:27,604 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['91/003506-0']
+2024-10-02 11:47:31,472 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['91/003506-0']
+2024-10-02 11:50:28,944 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['01/003506-0']
+2024-10-02 11:50:30,877 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['01/003506-0']
+2024-10-02 11:50:33,056 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['91/003506-0']
+2024-10-02 11:50:35,035 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 241: ['91/003506-9']
+2024-10-02 11:50:36,780 - INFO - Protocolo não encontrado no arquivo 010035052 010035060 910035052 910035060.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-02 12:07:50,235 - INFO - Processando lote 1 de 1
+2024-10-02 12:07:50,236 - INFO - Processando arquivo 010035052 010035060 910035052 910035060.pdf
+2024-10-02 12:10:21,459 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/003505-2']
+2024-10-02 12:10:22,858 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/003505-2']
+2024-10-02 12:10:24,246 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/003505-2']
+2024-10-02 12:10:25,741 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/003505-2']
+2024-10-02 12:10:29,783 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['91/003505-2']
+2024-10-02 12:12:49,617 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/003506-0']
+2024-10-02 12:12:51,611 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/003506-0']
+2024-10-02 12:12:53,559 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/003506-0']
+2024-10-02 12:12:55,630 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/003506-0']
+2024-10-02 12:12:57,541 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['01/003506-0']
+2024-10-02 12:12:59,575 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['01/003506-0']
+2024-10-02 12:13:01,466 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 236: ['91/003506-0']
+2024-10-02 12:13:03,326 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['91/003506-0']
+2024-10-02 12:13:07,226 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['91/003506-0']
+2024-10-02 12:16:01,374 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['01/003506-0']
+2024-10-02 12:16:03,275 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['01/003506-0']
+2024-10-02 12:16:05,387 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['91/003506-0']
+2024-10-02 12:16:07,189 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 241: ['91/003506-9']
+2024-10-02 12:16:09,053 - INFO - Protocolo não encontrado no arquivo 010035052 010035060 910035052 910035060.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-02 12:25:11,016 - INFO - Processando lote 1 de 1
+2024-10-02 12:25:11,018 - INFO - Processando arquivo 010035052 010035060 910035052 910035060.pdf
+2024-10-02 12:25:41,860 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/003505-2']
+2024-10-02 12:25:43,279 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/003505-2']
+2024-10-02 12:25:44,657 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/003505-2']
+2024-10-02 12:25:46,213 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/003505-2']
+2024-10-02 12:25:50,327 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['91/003505-2']
+2024-10-02 12:26:50,394 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/003506-0']
+2024-10-02 12:26:52,495 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/003506-0']
+2024-10-02 12:26:54,720 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/003506-0']
+2024-10-02 12:26:56,788 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/003506-0']
+2024-10-02 12:26:58,877 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['01/003506-0']
+2024-10-02 12:27:00,982 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['01/003506-0']
+2024-10-02 12:27:02,903 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 236: ['91/003506-0']
+2024-10-02 12:27:04,962 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['91/003506-0']
+2024-10-02 12:27:08,852 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['91/003506-0']
+2024-10-02 12:28:09,992 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['01/003506-0']
+2024-10-02 12:28:11,939 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['01/003506-0']
+2024-10-02 12:28:14,180 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['91/003506-0']
+2024-10-02 12:28:16,299 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 241: ['91/003506-9']
+2024-10-02 12:28:18,374 - ERROR - Erro ao processar arquivo 010035052 010035060 910035052 910035060.pdf: [Errno 13] Permission denied: './teste/010035052 010035060 910035052 910035060.pdf'
+2024-10-02 12:28:44,956 - INFO - Processando lote 1 de 1
+2024-10-02 12:28:44,957 - INFO - Processando arquivo 010035052 010035060 910035052 910035060.pdf
+2024-10-02 12:29:06,333 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 225: ['01/003505-2']
+2024-10-02 12:29:07,815 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 226: ['01/003505-2']
+2024-10-02 12:29:09,208 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 227: ['01/003505-2']
+2024-10-02 12:29:10,630 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 228: ['01/003505-2']
+2024-10-02 12:29:14,790 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['91/003505-2']
+2024-10-02 12:30:12,074 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 230: ['01/003506-0']
+2024-10-02 12:30:14,074 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 231: ['01/003506-0']
+2024-10-02 12:30:15,970 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 232: ['01/003506-0']
+2024-10-02 12:30:18,070 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 233: ['01/003506-0']
+2024-10-02 12:30:20,008 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 234: ['01/003506-0']
+2024-10-02 12:30:21,919 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 235: ['01/003506-0']
+2024-10-02 12:30:23,878 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 236: ['91/003506-0']
+2024-10-02 12:30:25,687 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 237: ['91/003506-0']
+2024-10-02 12:30:29,537 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['91/003506-0']
+2024-10-02 12:31:30,583 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 238: ['01/003506-0']
+2024-10-02 12:31:32,652 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 239: ['01/003506-0']
+2024-10-02 12:31:35,167 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 240: ['91/003506-0']
+2024-10-02 12:31:37,961 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 241: ['91/003506-9']
+2024-10-02 12:31:42,707 - INFO - Protocolo não encontrado no arquivo 010035052 010035060 910035052 910035060.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-03 08:28:49,769 - INFO - Processando lote 1 de 1
+2024-10-03 08:28:49,769 - INFO - Processando arquivo 010022317.pdf
+2024-10-03 08:30:36,314 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 182: ['91/002231-3']
+2024-10-03 08:30:39,121 - INFO - Arquivo 010022317.pdf movido e renomeado para 910022313.pdf
+2024-10-03 08:30:39,127 - INFO - Processando arquivo 010224173.pdf
+2024-10-03 08:31:55,397 - INFO - Protocolo não encontrado no arquivo 010224173.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-03 08:35:28,253 - INFO - Processando lote 1 de 1
+2024-10-03 08:35:28,253 - INFO - Processando arquivo 010224173.pdf
+2024-10-03 08:35:56,443 - INFO - Protocolo não encontrado no arquivo 010224173.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-03 08:35:56,449 - INFO - Processando arquivo 910022313.pdf
+2024-10-03 08:36:14,165 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 182: ['91/002231-3']
+2024-10-03 08:36:22,778 - INFO - Arquivo 910022313.pdf movido e renomeado para 910022313.pdf
+2024-10-03 08:37:49,046 - INFO - Processando lote 1 de 1
+2024-10-03 08:37:49,046 - INFO - Processando arquivo 010224173.pdf
+2024-10-03 08:38:22,434 - INFO - Protocolo não encontrado no arquivo 010224173.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-03 08:38:22,440 - INFO - Processando arquivo 910022313.pdf
+2024-10-03 08:38:53,311 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 182: ['91/002231-3']
+2024-10-03 08:38:56,114 - INFO - Arquivo 910022313.pdf movido e renomeado para 910022313.pdf
+2024-10-03 08:40:06,322 - INFO - Processando lote 1 de 1
+2024-10-03 08:40:06,323 - INFO - Processando arquivo 010224173.pdf
+2024-10-03 08:40:51,792 - INFO - Protocolo não encontrado no arquivo 010224173.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-03 08:40:51,798 - INFO - Processando arquivo 910022313.pdf
+2024-10-03 08:41:22,662 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 182: ['91/002231-3']
+2024-10-03 08:41:38,698 - INFO - Arquivo 910022313.pdf movido e renomeado para 910022313.pdf
+2024-10-03 08:42:10,772 - INFO - Processando lote 1 de 1
+2024-10-03 08:42:10,772 - INFO - Processando arquivo 010224173.pdf
+2024-10-03 08:42:55,298 - INFO - Protocolo não encontrado no arquivo 010224173.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-03 08:42:55,306 - INFO - Processando arquivo 910022313.pdf
+2024-10-03 08:43:24,396 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 182: ['91/002231-3']
+2024-10-03 08:43:38,786 - INFO - Arquivo 910022313.pdf movido e renomeado para 910022313.pdf
+2024-10-03 08:45:08,549 - INFO - Processando lote 1 de 1
+2024-10-03 08:45:08,549 - INFO - Processando arquivo 010224173.pdf
+2024-10-03 08:45:51,370 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 175: ['01/022417-3']
+2024-10-03 08:45:56,582 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 177: ['01/022417-3']
+2024-10-03 08:45:59,355 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 178: ['01/022417-3']
+2024-10-03 08:46:40,562 - INFO - Arquivo 010224173.pdf movido e renomeado para 010224173.pdf
+2024-10-03 08:46:40,568 - INFO - Processando arquivo 910022313.pdf
+2024-10-03 08:48:17,114 - INFO - Protocolo não encontrado no arquivo 910022313.pdf, movido para ./testesRenomeados/naoEncontrado
+2024-10-03 08:51:10,800 - INFO - Processando lote 1 de 1
+2024-10-03 08:51:10,800 - INFO - Processando arquivo 010224173.pdf
+2024-10-03 08:56:46,031 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 269: ['01/022411-3']
+2024-10-03 08:58:47,918 - INFO - Arquivo 010224173.pdf movido e renomeado para 010224113.pdf
+2024-10-03 08:58:47,928 - INFO - Processando arquivo 910022313.pdf
+2024-10-03 09:02:37,837 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 182: ['91/002231-3']
+2024-10-03 09:04:12,323 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 263: ['01/002231-7']
+2024-10-03 09:04:13,560 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 264: ['01/002231-7']
+2024-10-03 09:04:15,947 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 266: ['01/002231-7']
+2024-10-03 09:04:19,749 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 269: ['01/002231-7']
+2024-10-03 09:04:23,419 - INFO - Protocolo(s) secundário(s) encontrado(s) no ângulo 272: ['91/002231-3']
+2024-10-03 09:06:11,089 - INFO - Arquivo 910022313.pdf movido e renomeado para 010022317 910022313.pdf

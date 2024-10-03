@@ -67,7 +67,7 @@ def verificar_protocolo_semelhante(protocolos):
         # Verifica se há protocolos semelhantes na lista final
         for prot in protocolos_unicos:
             dif = sum(1 for a, b in zip(prot, protocolo_atual) if a != b)
-            if dif == 1:  # Se diferir por apenas um dígito
+            if dif == 1 and  protocolo_atual[0] != prot[0]:  # Se diferir por apenas um dígito
                 protocolo_similar = True
                 break
 
@@ -81,7 +81,7 @@ def extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secund
     imagens = pdf_para_imagens(pdf_path)
     protocolos_encontrados = []
 
-    angulos = list(range(1, 3)) + list(range(7, 11)) + list(range(177, 182)) + list(range(225, 242)) + list(range(270, 271))
+    angulos = list(range(1, 20)) + list(range(175, 186)) + list(range(225, 242)) + list(range(265, 271))
 
     for i, imagem in enumerate(imagens):
         imagem_preprocessada = preprocessar_imagem(imagem)
@@ -174,4 +174,4 @@ if __name__ == "__main__":
     regex_secundario = r'\b\d{2}/\d{6}-\d\b'
 
     # Processar PDFs em lotes de 10
-    processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, regex_secundario, tamanho_lote=10, max_paginas_por_subdocumento=5)
+    processar_pdfs_lote(diretorio_origem, diretorio_destino, regex_prioritario, regex_secundario, tamanho_lote=10, max_paginas_por_subdocumento=2)
