@@ -35,7 +35,7 @@ def dividir_pdf(pdf_path, max_paginas_por_subdocumento=10):
     
     return subdocumentos
 
-def pdf_para_imagens(pdf_path, dpi=800):
+def pdf_para_imagens(pdf_path, dpi=900):
     return convert_from_path(pdf_path, dpi=dpi)
 
 def preprocessar_imagem(imagem):
@@ -67,7 +67,9 @@ def verificar_protocolo_semelhante(protocolos):
         # Verifica se há protocolos semelhantes na lista final
         for prot in protocolos_unicos:
             dif = sum(1 for a, b in zip(prot, protocolo_atual) if a != b)
-            if dif == 1 and  protocolo_atual[0] != prot[0]:  # Se diferir por apenas um dígito
+           # if dif == 1 and  protocolo_atual[0] != prot[0]:  # Se diferir por apenas um dígito
+            if (dif == 1 and  protocolo_atual[0] != prot[0]) or (dif == 1 and protocolo_atual[-1] != prot[-1]):  # Se diferir por apenas um dígito
+
                 protocolo_similar = True
                 break
 
@@ -81,7 +83,8 @@ def extrair_texto_tesseract_por_pagina(pdf_path, regex_prioritario, regex_secund
     imagens = pdf_para_imagens(pdf_path)
     protocolos_encontrados = []
 
-    angulos = list(range(1, 20)) + list(range(175, 186)) + list(range(225, 242)) + list(range(265, 271))
+    #angulos = list(range(1,361))
+    angulos = list(range(1,4)) + list(range(6,13)) + list(range(175, 186)) + list(range(225, 242)) + list(range(265, 271)) + list(range(350, 360))
 
     for i, imagem in enumerate(imagens):
         imagem_preprocessada = preprocessar_imagem(imagem)
